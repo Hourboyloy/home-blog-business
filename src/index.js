@@ -1,13 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import StockMarker from "./pages/StockMarker";
+import Technologys from "./pages/Technologys";
+import Politics from "./pages/Politics";
+import Automobiles from "./pages/Automobiles";
+import Health from "./pages/Health";
+import InteractiveSessions from "./pages/InteractiveSessions";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path="/stock-marker" element={<StockMarker />} />
+          <Route path="/technology" element={<Technologys />} />
+          <Route path="/politics" element={<Politics />} />
+          <Route path="/automobiles" element={<Automobiles />} />
+          <Route path="/health" element={<Health />} />
+          <Route
+            path="/interactive-sessions"
+            element={<InteractiveSessions />}
+          />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
