@@ -67,7 +67,7 @@ function homeFirst() {
       </div>
       <div className="xl:flex items-center xl:h-[200px] space-y-6 xl:space-y-0 xl:space-x-6">
         <div className="w-[100%] md:h-full border">
-          <img className="w-full md:h-auto h-24" src={require(`../assets/home/5.jfif`)} />
+          <img className="w-full md:h-auto h-20" src={require(`../assets/home/5.jfif`)} />
         </div>
         <div className="w-full xl:w-[60%] border bg-white border-gray-100 h-full p-5 rounded shadow-xl text-xs md:text-sm space-y-[6px]">
           <h3 className=" font-semibold text-lg">Subscribe To Our Newsletter</h3>
