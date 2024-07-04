@@ -25,7 +25,7 @@ function homeFirst() {
                     <div className=" flex items-center  space-x-4 md:h-full">
                       <div className="w-full xl:w-[70%] md:h-full overflow-hidden">
                         <img
-                          className="h-32 md:h-full"
+                          className="h-36 md:h-full"
                           src={require(`../assets/home/${e.photo}`)}
                         />
                       </div>
@@ -66,8 +66,8 @@ function homeFirst() {
         </ul>
       </div>
       <div className="xl:flex items-center xl:h-[200px] space-y-6 xl:space-y-0 xl:space-x-6">
-        <div className="w-[100%] md:h-full border">
-          <img className="w-full md:h-auto h-20" src={require(`../assets/home/5.jfif`)} />
+        <div className="w-full">
+          <img className="w-full" src={require(`../assets/home/5.jfif`)} />
         </div>
         <div className="w-full xl:w-[60%] border bg-white border-gray-100 h-full p-5 rounded shadow-xl text-xs md:text-sm space-y-[6px]">
           <h3 className=" font-semibold text-lg">Subscribe To Our Newsletter</h3>
