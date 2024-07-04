@@ -23,9 +23,9 @@ function homeFirst() {
                 cards.map((e, i) => (
                   <li key={i + e} className="md:h-full">
                     <div className=" flex items-center  space-x-4 md:h-full">
-                      <div className="w-full xl:w-[70%] md:h-full overflow-hidden">
+                      <div className="w-full sm:w-[40%] md:w-full xl:w-[70%] md:h-full overflow-hidden border">
                         <img
-                          className="h-32 md:h-full"
+                          className="h-32 md:h-full w-full"
                           src={require(`../assets/home/${e.photo}`)}
                         />
                       </div>
