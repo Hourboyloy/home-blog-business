@@ -25,7 +25,7 @@ function homeFirst() {
                     <div className=" flex items-center  space-x-4 md:h-full">
                       <div className="w-full xl:w-[70%] md:h-full overflow-hidden">
                         <img
-                          className="h-28 md:h-full"
+                          className="h-32 md:h-full"
                           src={require(`../assets/home/${e.photo}`)}
                         />
                       </div>
