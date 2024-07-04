@@ -17,15 +17,15 @@ function homeFirst() {
               <p className=" text-white text-[12px]">akbarh June 28, 2021</p>
             </div>
           </div>
-          <div className="md:w-[50%] h-full">
-            <ul className=" space-y-4 h-full">
+          <div className="md:w-[50%] md:h-full">
+            <ul className=" space-y-4 md:h-full">
               {cards?.length > 0 &&
                 cards.map((e, i) => (
-                  <li key={i + e} className="h-full">
-                    <div className=" flex items-center  space-x-4 h-full">
-                      <div className="w-full xl:w-[70%] h-full overflow-hidden">
+                  <li key={i + e} className="md:h-full">
+                    <div className=" flex items-center  space-x-4 md:h-full">
+                      <div className="w-full xl:w-[70%] md:h-full overflow-hidden">
                         <img
-                          className="h-full"
+                          className="md:h-full"
                           src={require(`../assets/home/${e.photo}`)}
                         />
                       </div>
