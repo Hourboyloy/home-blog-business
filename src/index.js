@@ -11,6 +11,10 @@ import Politics from "./pages/Politics";
 import Automobiles from "./pages/Automobiles";
 import Health from "./pages/Health";
 import InteractiveSessions from "./pages/InteractiveSessions";
+import Details1 from "./pages/Details1";
+import Details2 from "./pages/Details2";
+import Details3 from "./pages/Details3";
+import Details4 from "./pages/Details4";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,7 +22,8 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route index element={<Home />} />
+          <Route index element={<Home />}></Route>
+
           <Route path="/stock-marker" element={<StockMarker />} />
           <Route path="/technology" element={<Technologys />} />
           <Route path="/politics" element={<Politics />} />
@@ -27,6 +32,23 @@ root.render(
           <Route
             path="/interactive-sessions"
             element={<InteractiveSessions />}
+          />
+
+          <Route
+            path="/want-a-career-in-technology-make-this-your-secret-weapon"
+            element={<Details1 />}
+          />
+          <Route
+            path="/the-health-industry-is-changing-fast-heres-how-to-keep-pace"
+            element={<Details2 />}
+          />
+          <Route
+            path="/everything-you-ever-wanted-to-know-about-technology"
+            element={<Details3 />}
+          />
+          <Route
+            path="/15-shocking-elon-musk-tweets-about-stock-market"
+            element={<Details4 />}
           />
         </Route>
       </Routes>

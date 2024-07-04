@@ -4,18 +4,21 @@ export const cards = [
     categoroy: "Technology",
     title: "Want a Career in Technology? Make This Your Secret Weapon",
     date: "June 28, 2021",
+    link: "/want-a-career-in-technology-make-this-your-secret-weapon",
   },
   {
     photo: "3.jfif",
     categoroy: "Health",
     title: "The Health Industry Is Changing Fast. Here’s How to Keep Pace",
     date: "June 28, 2021",
+    link: "/the-health-industry-is-changing-fast-heres-how-to-keep-pace",
   },
   {
     photo: "4.jfif",
     categoroy: "Technology",
     title: "Everything You Ever Wanted to Know About Technology",
     date: "June 28, 2021",
+    link: "/everything-you-ever-wanted-to-know-about-technology",
   },
 ];
 
