@@ -70,7 +70,7 @@ function Header({ handleSetToggle, toggleMenu }) {
           className={`${
             toggleMenu
               ? " translate-x-20 transition-all duration-100 w-0 overflow-hidden"
-              : " translate-x-0 transition-all duration-500 overflow-visible w-auto"
+              : " translate-x-0 transition-all duration-500 overflow-visible w-auto border"
           }`}
         >
           <button onClick={handleSetToggle} className=" focus:outline-none">
