@@ -69,7 +69,7 @@ function Header({ handleSetToggle, toggleMenu }) {
         <div
           className={`${
             toggleMenu
-              ? " translate-x-20 transition-all duration-100"
+              ? " translate-x-20 transition-all duration-100 w-0 overflow-hidden"
               : "translate-x-0 transition-all duration-100"
           }`}
         >

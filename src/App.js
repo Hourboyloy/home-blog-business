@@ -25,7 +25,7 @@ function App() {
             : "fixed w-[80%] h-screen z-30 -left-full transition-all duration-500"
         }`}
       >
-        <div className=" *:focus:outline-none lg:hidden top-0 left-0 flex flex-col space-y-5 z-30 bg-white h-screen w-full pl-8 text-gray-600 pt-10">
+        <div className=" *:focus:outline-none lg:hidden top-0 left-0 flex flex-col space-y-5 z-30 bg-white h-[150vh] w-full pl-8 text-gray-600 pt-10">
           <NavLink onClick={scrollToTop} to="/">
             Home
           </NavLink>
