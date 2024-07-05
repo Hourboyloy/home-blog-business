@@ -5,9 +5,16 @@ import { useNavigate } from "react-router-dom";
 
 function HomeFirst() {
    const navigatePage = useNavigate();
-  const HandleNavigate = ()=>{
-    navigatePage("/15-shocking-elon-musk-tweets-about-stock-market");
-  }
+   const scrollToTop = () => {
+     window.scrollTo({
+       top: 0,
+       behavior: "smooth",
+     });
+   };
+
+   const HandleNavigate = () => {
+     navigatePage("/15-shocking-elon-musk-tweets-about-stock-market");
+   };
 
   return (
     <div className=" space-y-10">
@@ -32,7 +39,7 @@ function HomeFirst() {
             <ul className=" space-y-4 md:h-full">
               {cards?.length > 0 &&
                 cards.map((e, i) => (
-                  <li key={i + e} className="md:h-full">
+                  <li onClick={scrollToTop} key={i + e} className="md:h-full">
                     <Link to={`${e.link}`}>
                       <div className=" flex items-center  space-x-4 md:h-full">
                         <div className="w-full sm:w-[40%] md:w-full xl:w-[70%] md:h-full overflow-hidden border">

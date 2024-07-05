@@ -2,6 +2,12 @@ import React from "react";
 import {Link} from 'react-router-dom'
 
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className=" bg-[#F7F7F8]">
       <div>
@@ -32,13 +38,13 @@ function Footer() {
             <div className=" md:pt-6 pb-10 border-b-2 border-gray-500 space-y-4 md:space-y-0 md:space-x-10 lg:space-x-0 md:flex md:justify-between">
               <h3 className=" text-3xl font-bold">BUSINESSLY</h3>
               <div className=" *:text-blue-600 space-y-2 md:space-y-0 md:*:px-2 md:flex-row flex-col flex flex-wrap">
-                <Link to="/">Home</Link>
-                <Link to="/stock-marker">Stock Market</Link>
-                <Link to="/technology">Technology</Link>
-                <Link to="/politics">Politics</Link>
-                <Link to="/automobiles">Automobile</Link>
-                <Link to="/health">Health</Link>
-                <Link to="/interactive-sessions">Interactive Sessions</Link>
+                <Link onClick={scrollToTop} to="/">Home</Link>
+                <Link onClick={scrollToTop} to="/stock-marker">Stock Market</Link>
+                <Link onClick={scrollToTop} to="/technology">Technology</Link>
+                <Link onClick={scrollToTop} to="/politics">Politics</Link>
+                <Link onClick={scrollToTop} to="/automobiles">Automobile</Link>
+                <Link onClick={scrollToTop} to="/health">Health</Link>
+                <Link onClick={scrollToTop} to="/interactive-sessions">Interactive Sessions</Link>
               </div>
             </div>
 

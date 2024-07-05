@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Details1() {
+     const scrollToTop = () => {
+       window.scrollTo({
+         top: 0,
+         behavior: "smooth",
+       });
+     };
   return (
     <div className="bg-[rgb(248,248,248)] pt-5 md:pt-8 xl:pt-16 pb-8 md:pb-10 xl:pb-20">
       <div className="xl:px-0 px-2 md:px-5 lg:px-8 xl:max-w-[960px] mx-auto space-y-8">
@@ -93,7 +99,10 @@ function Details1() {
           </div>
           <div className=" md:flex md:space-x-4 space-y-8 md:space-y-0">
             <div className="w-full">
-              <Link to="/the-health-industry-is-changing-fast-heres-how-to-keep-pace">
+              <Link
+                onClick={scrollToTop}
+                to="/the-health-industry-is-changing-fast-heres-how-to-keep-pace"
+              >
                 <div className="w-full space-y-2">
                   <div className=" pb-1">
                     <img src={require(`../assets/home/3.jfif`)} alt="" />
@@ -108,7 +117,10 @@ function Details1() {
             </div>
 
             <div className="w-full">
-              <Link to="/everything-you-ever-wanted-to-know-about-technology">
+              <Link
+                onClick={scrollToTop}
+                to="/everything-you-ever-wanted-to-know-about-technology"
+              >
                 <div className="w-full space-y-2">
                   <div className=" pb-1">
                     <img src={require(`../assets/home/4.jfif`)} alt="" />

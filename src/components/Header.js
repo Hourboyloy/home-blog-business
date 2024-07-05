@@ -1,7 +1,19 @@
 import React from "react";
 import {NavLink } from "react-router-dom";
 
+
 function Header({ handleSetToggle }) {
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+
+
+
+
   return (
     <div className="max-w-[1200px] lg:mx-auto py-3 lg:space-y-5 px-4 2xl:px-0">
       <div className="hidden lg:flex w-full justify-between items-center">
@@ -31,13 +43,13 @@ function Header({ handleSetToggle }) {
         </div>
       </div>
       <div className="w-full hidden lg:flex items-center justify-center space-x-8 *:text-gray-600">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/stock-marker">Stock Market</NavLink>
-        <NavLink to="/technology">Technology</NavLink>
-        <NavLink to="/politics">Politics</NavLink>
-        <NavLink to="/automobiles">Automobile</NavLink>
-        <NavLink to="/health">Health</NavLink>
-        <NavLink to="/interactive-sessions">Interactive Sessions</NavLink>
+        <NavLink onClick={scrollToTop} to="/">Home</NavLink>
+        <NavLink onClick={scrollToTop} to="/stock-marker">Stock Market</NavLink>
+        <NavLink onClick={scrollToTop} to="/technology">Technology</NavLink>
+        <NavLink onClick={scrollToTop} to="/politics">Politics</NavLink>
+        <NavLink onClick={scrollToTop} to="/automobiles">Automobile</NavLink>
+        <NavLink onClick={scrollToTop} to="/health">Health</NavLink>
+        <NavLink onClick={scrollToTop} to="/interactive-sessions">Interactive Sessions</NavLink>
       </div>
       <div className="lg:hidden flex justify-between items-center">
         <div className="">

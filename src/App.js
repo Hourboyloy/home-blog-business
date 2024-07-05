@@ -8,6 +8,13 @@ function App() {
   const handleSetToggle = () => {
     setToggleMenu(!toggleMenu);
   };
+
+   const scrollToTop = () => {
+     window.scrollTo({
+       top: 0,
+       behavior: "smooth",
+     });
+   };
   return (
     <div className="bg-[#FCFCFD]">
       <div
@@ -18,13 +25,13 @@ function App() {
         }`}
       >
         <div className=" *:focus:outline-none lg:hidden top-0 left-0 flex flex-col space-y-5 z-30 bg-white h-screen w-full pl-8 text-gray-600 pt-10">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/stock-marker">Stock Market</NavLink>
-          <NavLink to="/technology">Technology</NavLink>
-          <NavLink to="/politics">Politics</NavLink>
-          <NavLink to="/automobiles">Automobile</NavLink>
-          <NavLink to="/health">Health</NavLink>
-          <NavLink to="/interactive-sessions">Interactive Sessions</NavLink>
+          <NavLink onClick={scrollToTop} to="/">Home</NavLink>
+          <NavLink onClick={scrollToTop} to="/stock-marker">Stock Market</NavLink>
+          <NavLink onClick={scrollToTop} to="/technology">Technology</NavLink>
+          <NavLink onClick={scrollToTop} to="/politics">Politics</NavLink>
+          <NavLink onClick={scrollToTop} to="/automobiles">Automobile</NavLink>
+          <NavLink onClick={scrollToTop} to="/health">Health</NavLink>
+          <NavLink onClick={scrollToTop} to="/interactive-sessions">Interactive Sessions</NavLink>
         </div>
         <div className=" text-gray-900 absolute border border-dashed border-gray-300 p-2 top-4 right-4 z-30 flex items-center justify-center">
           <button
