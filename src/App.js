@@ -10,6 +10,7 @@ function App() {
   };
 
    const scrollToTop = () => {
+    setToggleMenu(!toggleMenu);
      window.scrollTo({
        top: 0,
        behavior: "smooth",
