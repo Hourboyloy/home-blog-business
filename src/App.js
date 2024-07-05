@@ -26,13 +26,27 @@ function App() {
         }`}
       >
         <div className=" *:focus:outline-none lg:hidden top-0 left-0 flex flex-col space-y-5 z-30 bg-white h-screen w-full pl-8 text-gray-600 pt-10">
-          <NavLink onClick={scrollToTop} to="/">Home</NavLink>
-          <NavLink onClick={scrollToTop} to="/stock-marker">Stock Market</NavLink>
-          <NavLink onClick={scrollToTop} to="/technology">Technology</NavLink>
-          <NavLink onClick={scrollToTop} to="/politics">Politics</NavLink>
-          <NavLink onClick={scrollToTop} to="/automobiles">Automobile</NavLink>
-          <NavLink onClick={scrollToTop} to="/health">Health</NavLink>
-          <NavLink onClick={scrollToTop} to="/interactive-sessions">Interactive Sessions</NavLink>
+          <NavLink onClick={scrollToTop} to="/">
+            Home
+          </NavLink>
+          <NavLink onClick={scrollToTop} to="/stock-marker">
+            Stock Market
+          </NavLink>
+          <NavLink onClick={scrollToTop} to="/technology">
+            Technology
+          </NavLink>
+          <NavLink onClick={scrollToTop} to="/politics">
+            Politics
+          </NavLink>
+          <NavLink onClick={scrollToTop} to="/automobiles">
+            Automobile
+          </NavLink>
+          <NavLink onClick={scrollToTop} to="/health">
+            Health
+          </NavLink>
+          <NavLink onClick={scrollToTop} to="/interactive-sessions">
+            Interactive Sessions
+          </NavLink>
         </div>
         <div className=" text-gray-900 absolute border border-dashed border-gray-300 p-2 top-4 right-4 z-30 flex items-center justify-center">
           <button
@@ -57,7 +71,7 @@ function App() {
         </div>
       </div>
       <div className=" sticky top-0 z-20 bg-[#FCFCFD]">
-        <Header handleSetToggle={handleSetToggle} />
+        <Header handleSetToggle={handleSetToggle} toggleMenu={toggleMenu} />
       </div>
       <div>
         <Outlet />

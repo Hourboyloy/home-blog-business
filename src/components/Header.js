@@ -2,17 +2,13 @@ import React from "react";
 import {NavLink } from "react-router-dom";
 
 
-function Header({ handleSetToggle }) {
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
-
-
-
-
+function Header({ handleSetToggle, toggleMenu }) {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className="max-w-[1200px] lg:mx-auto py-3 lg:space-y-5 px-4 2xl:px-0">
@@ -43,20 +39,40 @@ const scrollToTop = () => {
         </div>
       </div>
       <div className="w-full hidden lg:flex items-center justify-center space-x-8 *:text-gray-600">
-        <NavLink onClick={scrollToTop} to="/">Home</NavLink>
-        <NavLink onClick={scrollToTop} to="/stock-marker">Stock Market</NavLink>
-        <NavLink onClick={scrollToTop} to="/technology">Technology</NavLink>
-        <NavLink onClick={scrollToTop} to="/politics">Politics</NavLink>
-        <NavLink onClick={scrollToTop} to="/automobiles">Automobile</NavLink>
-        <NavLink onClick={scrollToTop} to="/health">Health</NavLink>
-        <NavLink onClick={scrollToTop} to="/interactive-sessions">Interactive Sessions</NavLink>
+        <NavLink onClick={scrollToTop} to="/">
+          Home
+        </NavLink>
+        <NavLink onClick={scrollToTop} to="/stock-marker">
+          Stock Market
+        </NavLink>
+        <NavLink onClick={scrollToTop} to="/technology">
+          Technology
+        </NavLink>
+        <NavLink onClick={scrollToTop} to="/politics">
+          Politics
+        </NavLink>
+        <NavLink onClick={scrollToTop} to="/automobiles">
+          Automobile
+        </NavLink>
+        <NavLink onClick={scrollToTop} to="/health">
+          Health
+        </NavLink>
+        <NavLink onClick={scrollToTop} to="/interactive-sessions">
+          Interactive Sessions
+        </NavLink>
       </div>
       <div className="lg:hidden flex justify-between items-center">
         <div className="">
           <h1 className=" font-bold text-xl uppercase">Businessly</h1>
         </div>
 
-        <div>
+        <div
+          className={`${
+            toggleMenu
+              ? " translate-x-20 transition-all duration-100"
+              : "translate-x-0 transition-all duration-100"
+          }`}
+        >
           <button onClick={handleSetToggle} className=" focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
